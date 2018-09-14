@@ -17,7 +17,7 @@ Vue.config.productionTip = false
 // Custom directives
   //v-rainbow
 Vue.directive("rainbow", {
-  bind(el, binding, vnode) {
+  bind(el) {
     el.style.background = "#" + Math.random().toString().slice(2,8);
   }
 })

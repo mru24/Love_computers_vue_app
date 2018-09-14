@@ -8,7 +8,7 @@
           <input type="text" v-model="search" placeholder="search blogs..">
         </div>
 
-        <div class="single-post" v-for="blog in filteredBlogs">
+        <div class="single-post" v-for="(blog, index) in filteredBlogs" :key="index">
           <h4 v-rainbow class="header">{{ blog.title }}</h4>
           <article>
             <router-link v-bind:to="'/post/' + blog.id">

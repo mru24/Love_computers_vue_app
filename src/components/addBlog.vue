@@ -39,8 +39,7 @@ export default {
   },
   methods: {
     post: function() {
-      this.$http.post('https://vue-app-14-09-2018.firebaseio.com/posts.json', this.blog).then(function(data) {
-        console.log(data);
+      this.$http.post('https://vue-app-14-09-2018.firebaseio.com/posts.json', this.blog).then(function() {
         this.submitted = true;
       })
     }
